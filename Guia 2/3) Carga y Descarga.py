@@ -41,3 +41,17 @@ def g(x):
 x = np.linspace(0, 20, 1)
 solucion1 = fsolve(g, x)
 print(f"El tamaño del archivo si el tiempo de descarga es de 195 segundos es de {solucion1[0]:.0f} MB") # FALSOOOOOOOOOO
+
+# 6)
+import matplotlib.pyplot as plt
+tiempo = np.arange(0, 15, 0.1)
+metro = 0.4*tiempo       #Como se grafican
+bus = 0.3*tiempo         #dos o más variables
+plt.plot(tiempo, metro, label = 'Metro')
+plt.plot(tiempo, bus, label = 'Bus')
+plt.title('Distancia recorrida por minutos')
+plt.ylabel('Distancia(Km)')
+plt.xlabel('Tiempo (M)')
+plt.legend()
+plt.grid(True)
+plt.show()
