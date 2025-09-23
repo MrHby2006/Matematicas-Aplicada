@@ -59,4 +59,4 @@ solucion = np.around(fsolve(S, xo),decimals = 2)
 interseccion = np.unique(solucion)
 
 print(f"La función h(x) = 50 en x = {interseccion}")
-print("La fucnión h(x) es igual a 50 en los puntos (-3,50) y (7,50)")
+print("La función h(x) es igual a 50 en los puntos (-3,50) y (7,50)")
