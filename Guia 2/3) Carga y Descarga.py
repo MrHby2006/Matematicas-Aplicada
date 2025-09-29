@@ -33,7 +33,7 @@ def f(x):
     return 0.2*x - 163
 x = np.linspace(0, 20, 1)
 solucion = fsolve(f, x)
-print(f"El tamaño deñ archivo si el tiempo de carga es de 163 segundos es de{solucion[0]:.0f} MB")
+print(f"El tamaño del archivo si el tiempo de carga es de 163 segundos es de {solucion[0]:.0f} MB")
 
 # 5)
 def g(x):
@@ -45,13 +45,13 @@ print(f"El tamaño del archivo si el tiempo de descarga es de 195 segundos es de
 # 6)
 import matplotlib.pyplot as plt
 tiempo = np.arange(0, 15, 0.1)
-metro = 0.4*tiempo       #Como se grafican
-bus = 0.3*tiempo         #dos o más variables
-plt.plot(tiempo, metro, label = 'Metro')
-plt.plot(tiempo, bus, label = 'Bus')
-plt.title('Distancia recorrida por minutos')
-plt.ylabel('Distancia(Km)')
-plt.xlabel('Tiempo (M)')
+carga = 0.20*tiempo       #Como se grafican
+descarga = 0.16*tiempo         #dos o más variables
+plt.plot(tiempo, carga, label = 'Carga')
+plt.plot(tiempo, descarga, label = 'Descarga')
+plt.title('EL tiempo de carga y descarga de archivos en función a su tamaño')
+plt.ylabel('Tiempo (S)')
+plt.xlabel('Tamaño del archivo (Mb)')
 plt.legend()
 plt.grid(True)
 plt.show()
