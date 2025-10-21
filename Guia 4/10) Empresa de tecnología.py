@@ -44,7 +44,4 @@ while diferencia > 0:
     termino = b_1 * r**(n - 1)
     diferencia = final - termino
     
-if diferencia == 0:
-    print(f"El término {final} pertenece a la sucesión y esta en la posición {n}")
-else:
-    print(f"El término {final} no pertenece a la sucesión")
+print(f"Para que el rendimiento sea de 23,4 miles de TPS debe estar en el mes {n}")
